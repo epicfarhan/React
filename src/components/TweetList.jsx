@@ -4,7 +4,7 @@ function TweetList({ tweet, setTweet }) {
   return (
     <div className="tweetlist">
       {tweet.map((item) => (
-        <Tweet name={item} />
+        <Tweet name={item} tweets={tweet} setTweet={setTweet} />
       ))}
     </div>
   );

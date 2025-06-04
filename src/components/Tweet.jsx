@@ -1,6 +1,6 @@
-function Tweet({ name, setTweet }) {
+function Tweet({ name, setTweet, tweets }) {
   function remove() {
-    console.log(name);
+    setTweet(tweets.filter((item) => item !== name));
   }
 
   return (
