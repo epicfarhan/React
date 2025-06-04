@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 function Create({ old, updated, setTweet, tweet }) {
   // function
   function hehe(e) {
@@ -6,7 +7,7 @@ function Create({ old, updated, setTweet, tweet }) {
 
   function submit(e) {
     e.preventDefault();
-    setTweet([...tweet, old]);
+    setTweet([...tweet, { tweet: old, id: uuidv4() }]);
     updated("");
   }
   return (
