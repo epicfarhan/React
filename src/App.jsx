@@ -1,16 +1,13 @@
-import { useState } from "react";
-import Create from "./components/Create";
-import TweetList from "./components/TweetList";
+import Player from "./components/Player";
+import Song from "./components/Song";
 
 function App() {
-  // state
-  const [old, updated] = useState("");
-  const [tweet, setTweet] = useState([]);
+  // components
 
   return (
     <>
-      <Create old={old} updated={updated} tweet={tweet} setTweet={setTweet} />
-      <TweetList tweet={tweet} setTweet={setTweet} />
+      <Song />
+      <Player />
     </>
   );
 }
