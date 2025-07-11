@@ -5,13 +5,12 @@ function App() {
     { id: 3, text: "someone" },
   ];
 
-  return (
-    <>
-      {posts.map((comment, index) => (
-        <h1 key={index}>{comment.text}</h1>
-      ))}
-    </>
-  );
+  const loaded = true;
+  const header = posts.map((comment, index) => (
+    <h1 key={index}>{comment.text}</h1>
+  ));
+
+  return <>{loaded && header}</>;
 }
 
 export default App;
