@@ -1,13 +1,9 @@
-import Player from "./components/Player";
-import Song from "./components/Song";
-
 function App() {
   // components
 
   return (
     <>
-      <Song />
-      <Player />
+      <h1>hello world!</h1>
     </>
   );
 }
